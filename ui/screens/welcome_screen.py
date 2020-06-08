@@ -88,7 +88,7 @@ Builder.load_string("""
                         root.manager.current = 'paintball'
 
                 WelcomeButton:
-                    text: 'Ships'
+                    text: 'Hit Gun'
                     icon: 'mouse'
                     size_hint_x: 1
                     on_press:

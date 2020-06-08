@@ -27,7 +27,7 @@ class ContentNavigationDrawer(MDNavigationDrawer):
         self.snakes = NavigationDrawerIconButton(text="Snakes & Ladders", icon='gamepad',
                                                    on_press=lambda x:
                                                    self.scr_chng('snakes', self.snakes))
-        self.ships = NavigationDrawerIconButton(text="Ships", icon='mouse',
+        self.ships = NavigationDrawerIconButton(text="Hit Gun", icon='mouse',
                                                    on_press=lambda x:
                                                    self.scr_chng('ships', self.ships))
         self.add_widget(self.home)
