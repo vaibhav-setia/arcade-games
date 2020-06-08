@@ -4,6 +4,7 @@ from kivy.clock import Clock
 from kivy.uix.anchorlayout import AnchorLayout
 from kivy.lang import Builder
 from kivy.app import App
+
 # Project imports
 from ui.widgets.nav_drawer import MyNavigationLayout
 
@@ -25,15 +26,15 @@ Builder.load_string("""
         Rectangle:
             pos: self.pos
             size: self.size
-            source: 'ui/img/morse_code_bg.jpg'
+            source: 'ui/img/games.jpg'
             tex_coords: root.tex_coords
 
     FloatLayout:
-        size_hint: .65, .65
+        size_hint: .8, .8
         pos_hint: {'center_x': 0.5, 'center_y': .5}
         canvas.before:
             Color:
-                rgba:  app.theme_cls.accent_color
+                rgba:  [1,1,1,0]
             RoundedRectangle:
                 size: self.size
                 pos: self.pos
@@ -45,51 +46,54 @@ Builder.load_string("""
             pos_hint: {'center_x': 0.5, 'center_y': .5}
 
             Image:
-                source: 'ui/img/welcome_morse_code.png'
-                size_hint_y: .3
+                source: 'ui/img/arcade.png'
+                size_hint_y: 1
                 allow_stretch: True
 
             Widget:
                 size_hint_y: .1
-
+                
+        
+                    
             GridLayout:
-                spacing: dp(20)
-                cols: 2
+                cols: 1
+                spacing : dp(18)
 
+                WelcomeButton:
+                    text: 'Snakes and Ladders'
+                    icon: 'gamepad'
+                    size_hint_x : 1
+                    on_press:
+                        root.manager.current = 'snakes'
+        
                 WelcomeButton:
                     text: 'Tic-Tac-Toe'
                     size_hint_x: 1
-                    icon: 'database-export'
+                    icon: 'table-large'
                     on_press:
                         root.manager.current = 'tic'
 
                 WelcomeButton:
                     text: 'Battleship'
-                    icon: 'database-import'
+                    icon: 'water'
                     size_hint_x: 1
                     on_press:
                         root.manager.current = 'battleship'
 
                 WelcomeButton:
                     text: 'Paintball'
-                    icon: 'dumbbell'
+                    icon: 'flash'
                     size_hint_x: 1
                     on_press:
                         root.manager.current = 'paintball'
 
                 WelcomeButton:
                     text: 'Ships'
-                    icon: 'cogs'
+                    icon: 'mouse'
                     size_hint_x: 1
                     on_press:
                         root.manager.current = 'ships'
 
-                WelcomeButton:
-                    text: 'Snakes and Ladders'
-                    icon: 'login-variant'
-                    size_hint_x: 1
-                    on_press:
-                        root.manager.current = 'snakes'
 
 """)
 

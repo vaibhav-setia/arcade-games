@@ -37,14 +37,6 @@ class MainBox(FloatLayout):
         self.content.add_widget(PaintBallScreen(name='paintball', util=self.util))
         self.content.add_widget(ShipScreen(name='ships', util=self.util))
         self.content.add_widget(SnakeScreen(name='snakes', util=self.util))
-        # self.content.add_widget(TrainingMenuScreen(name='training', util=self.util))
-        # self.content.add_widget(ListeningScreen(name='listening', util=self.util))
-        # self.content.add_widget(TappingScreen(name='tapping', util=self.util))
-        # self.content.add_widget(CalibrationScreen(name='calibration', util=self.util))
-        # self.content.add_widget(SignInScreen(name='sign_in', util=self.util))
-        # self.content.add_widget(AddContactScreen(name='add_contact', util=self.util))
-        # self.content.add_widget(MessageScreen(name='message', util=self.util))
-        # # Place screens here
 
         self.screens.add_widget(self.content)
 
@@ -55,11 +47,11 @@ class MainApp(App):
     util = Utility()
     # Change APP colors here
     theme_cls = ThemeManager()
-    theme_cls.primary_palette = 'Teal'
+    theme_cls.primary_palette = 'Indigo'
     theme_cls.primary_hue = '300'
-    theme_cls.accent_palette = 'Gray'
+    theme_cls.accent_palette = 'Cyan'
     theme_cls.accent_hue = '800'
-    theme_cls.theme_style = 'Dark'
+    theme_cls.theme_style = 'Light'
     accent_color = [255/255, 64/255, 129/255, 1]
 
     def build(self):

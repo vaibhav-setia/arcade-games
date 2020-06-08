@@ -11,23 +11,23 @@ class ContentNavigationDrawer(MDNavigationDrawer):
         super(ContentNavigationDrawer, self).__init__()
         self.nav_layout = nav_layout
         self.use_logo = 'logo'
-        self.drawer_logo = 'ui/img/nav_drawer_logo.png'
+        self.drawer_logo = 'ui/img/pic.jpg'
         self.home = NavigationDrawerIconButton(text="Home", icon='home',
                                                on_press=lambda x:
                                                self.scr_chng('welcome', self.home))
-        self.tictac = NavigationDrawerIconButton(text="Tic-Tac-Toe", icon='database-import',
+        self.tictac = NavigationDrawerIconButton(text="Tic-Tac-Toe", icon='table-large',
                                                  on_press=lambda x:
                                                  self.scr_chng('tic', self.tictac))
-        self.battle = NavigationDrawerIconButton(text="Battleship", icon='database-export',
+        self.battle = NavigationDrawerIconButton(text="Battleship", icon='water',
                                                  on_press=lambda x:
                                                  self.scr_chng('battleship', self.battle))
-        self.paintball = NavigationDrawerIconButton(text="Paintball", icon='message',
+        self.paintball = NavigationDrawerIconButton(text="Paintball", icon='flash',
                                                   on_press=lambda x:
                                                   self.scr_chng('paintball', self.paintball))
-        self.snakes = NavigationDrawerIconButton(text="Snakes & Ladders", icon='dumbbell',
+        self.snakes = NavigationDrawerIconButton(text="Snakes & Ladders", icon='gamepad',
                                                    on_press=lambda x:
                                                    self.scr_chng('snakes', self.snakes))
-        self.ships = NavigationDrawerIconButton(text="Ships", icon='dumbbell',
+        self.ships = NavigationDrawerIconButton(text="Ships", icon='mouse',
                                                    on_press=lambda x:
                                                    self.scr_chng('ships', self.ships))
         self.add_widget(self.home)
@@ -42,7 +42,7 @@ class ContentNavigationDrawer(MDNavigationDrawer):
         self.nav_layout.toggle_nav_drawer()
         # I have to manually reset the color back to white
         # because it's not doing it on its own
-        nav_item._active_color = [1, 1, 1, 1]
+        nav_item._active_color = [255/255, 64/255, 129/255, 1]
         if screen == 'message' and App.get_running_app().util.auth_token == '':
             App.get_running_app().root.content.current = 'sign_in'
         else:
