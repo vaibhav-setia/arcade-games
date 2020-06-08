@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jar/SHIPS.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/TICTACTOE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/BATTLESHIP.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/SNAKES_AND_LADDERS.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/PAINTBALL.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
