@@ -54,17 +54,14 @@ public class Ships extends JFrame implements ActionListener{
     JLabel levelon = new JLabel("On Level : "+level, SwingConstants.CENTER);
     JLabel livesleft = new JLabel("Lives left : "+lives, SwingConstants.CENTER);
     public int vai=0;
-    //Container container;
-    /**
-    * Create the frame.
-    */
+  
     public Ships() {
          //Container container= getContentPane();
 
 
     	Image back = new ImageIcon(this.getClass().getResource("/resources/splash.jpg"))
     			.getImage();
-    		//.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
+    		
     	this.setContentPane(new JPanel() {
             @Override
             public void paintComponent(Graphics g) {
