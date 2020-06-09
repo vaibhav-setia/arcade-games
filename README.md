@@ -24,7 +24,7 @@ Some of the screenshots of our desktop games arcade are added below:
 ### Snakes and Ladders
 
 ![Snakes and Ladder](screenshots/snakeladder.png)
-### Tic-ac-Toe
+### Tic-Tac-Toe
 
 ![Tic-Tac-Toe](screenshots/tictac.png)
 ### Paintball
