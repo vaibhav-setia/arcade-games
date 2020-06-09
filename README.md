@@ -14,13 +14,31 @@ You might be familiar with most of these games. Nevertheless, the rules of these
 
 Some of the screenshots of our desktop games arcade are added below: 
 
+### Homepage
+
 ![Homepage](screenshots/arcade.png)
 
+### Navigation
+
 ![Navigation Bar](screenshots/navigation.png)
+### Snakes and Ladders
 
 ![Snakes and Ladder](screenshots/snakeladder.png)
+### Tic-ac-Toe
+
 ![Tic-Tac-Toe](screenshots/tictac.png)
+### Paintball
+
 ![Paintball](screenshots/paintball.png)
+
+### Battleship
+
+![Paintball](screenshots/battle.png)
+
+
+### Hit Gun
+
+![Paintball](screenshots/hitgun.png)
 
 ## Installation
 
