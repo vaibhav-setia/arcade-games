@@ -61,7 +61,7 @@ python main.py
 * [Aditya Sharma](https://github.com/dadhichaditya)
 * [Nikita Gupta](https://github.com/nikitagupta1006)
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+[![Alt text](https://www.youtube.com/watch?v=mGLqg4TG8ew/0.jpg)](https://www.youtube.com/watch?v=mGLqg4TG8ew)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
